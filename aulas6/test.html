@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste html</title>
+</head>
+<body>
+    <form action="/submit" method="get">
+        <h2> Dados Pessoas:</h2>
+        <label for="nome">Nome Completo:</label>
+        <input type="text" name="nome" placeholder="digite seu nome" required>
+        <label for="Idade">Idade:</label>
+        <input type="number" name="number" id="number" min="18" max="50" placeholder="digite" required>
+        <label for="cidade">Estado:</label>
+        <select name="Estado" id="Estado" required>
+            <option> SP </option>
+            <option> RS </option>
+            <option> RJ </option>
+            <option> SC </option>
+            <option> BH </option>
+        </select>
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="digite seu email" required>
+        <label for="contact">contato:</label>
+        <input type="" name="tel" placeholder="seu numero de telefone" required>
+        <label for="password">crie sua senha:</label>
+        <input type="password" name="password" required>
+        <br>
+        <br>
+        <button type="/submit">salvar</button>
+        <input type="reset">
+    </form>
+    
+</body>
+</html>

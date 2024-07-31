@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1> blog</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="titulo.html">titles</a></li>
+                <li><a href="login.html">login</a></li>
+            
+                <div class="dropdown">
+                <button class="dropbtn">contact</button>
+                <div class="dropdown-content">
+                <a href="https://www.instagram.com/">instagram</a>
+                <a href="https://www.instagram.com/accounts/login/">pinterest</a>
+                <a href="https://x.com/">twitter</a>
+                </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <form action="/submit" method="get">
+    <h1>Formulario de Cadastro</h1>
+    <h2> Dados Pessoas:</h2>
+    <label for="nome">Nome Completo:</label>
+    <input type="text" name="nome" placeholder="digite seu nome" required>
+    <label for="Idade">Idade:</label>
+    <input type="number" name="number" id="number" min="18" max="50" placeholder="digite" required>
+    <br>
+    <label for="cidade">Estado:</label>
+    <select name="Estado" id="Estado" required>
+        <option> SP </option>
+        <option> RS </option>
+        <option> RJ </option>
+        <option> SC </option>
+        <option> BH </option>
+    </select>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" name="email" placeholder="digite seu email" required>
+    <label for="contact">contato:</label>
+    <input type="" name="tel" placeholder="seu numero de telefone" required>
+    <br>
+    <label for="password">crie sua senha:</label>
+    <input type="password" name="password" required>
+    <br>
+    <br>
+    <button type="/submit">salvar</button>
+    <input type="reset">
+    </form>
+    <br>
+    <br>
+    <br>
+    <footer>
+        &copy; 2024, todos os direitos reservados para Yuri beck
+    </footer>
+</body>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #918c8c;
+    }
+    
+    
+    header {
+        background: #080808;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+    }
+    
+    header h1 {
+        margin: 0;
+    }
+    
+    header li:hover{
+        background-color: rgba(91, 80, 80, 0.361);
+    }
+    
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .dropbtn {
+      background-color: #080808;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #e6e2e2;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown-content a:hover {background-color: #f1f1f1}
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+    .dropdown:hover .dropbtn {
+      background-color: #000000;
+    }
+    
+    form {
+      /* border: 3px solid #f1f1f1; */
+      margin-inline: 200px;
+      padding-inline: 300px;
+    
+    }
+    
+    footer {
+    text-align: center;
+    background: #080808;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+</style>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1> blog</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="titulo.html">titles</a></li>
+                <li><a href="login.html">login</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">contact</button>
+                    <div class="dropdown-content">
+                    <a href="https://www.instagram.com/">instagram</a>
+                    <a href="https://www.instagram.com/accounts/login/">pinterest</a>
+                    <a href="https://x.com/">twitter</a>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Lewis Hamilton</h1>
+        <img src="https://images.ps-aws.com/c?url=https%3A%2F%2Fd3cm515ijfiu6w.cloudfront.net%2Fwp-content%2Fuploads%2F2021%2F11%2F14190939%2Flewis-hamilton-brazil-flag-sao-paulo-podium-planetf1.jpg" alt="Lewis Hamilton" class="team-logo">
+
+        <div class="section">
+            <h2>Equipe</h2>
+            <p>Mercedes-AMG Petronas Formula One Team</p>
+        </div>
+
+        <div class="section1">
+            <h2>Títulos</h2>
+            <ul class="titles-list">
+                <li>Campeão Mundial de Fórmula 1 - 2008</li>
+                <li>Campeão Mundial de Fórmula 1 - 2014</li>
+                <li>Campeão Mundial de Fórmula 1 - 2015</li>
+                <li>Campeão Mundial de Fórmula 1 - 2017</li>
+                <li>Campeão Mundial de Fórmula 1 - 2018</li>
+                <li>Campeão Mundial de Fórmula 1 - 2019</li>
+                <li>Campeão Mundial de Fórmula 1 - 2020</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Pistas Onde Venceu</h2>
+            <ul class="tracks-list">
+                <li>Silverstone (Grã-Bretanha)</li>
+                <li>Monza (Itália)</li>
+                <li>Spa-Francorchamps (Bélgica)</li>
+                <li>Monaco (Mônaco)</li>
+                <li>Suzuka (Japão)</li>
+                <li>Interlagos (Brasil)</li>
+                <li>Yas Marina (Abu Dhabi)</li>
+                <li>Circuit of the Americas (EUA)</li>
+                <li>Montreal (Canadá)</li>
+                <li>Shanghai (China)</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>
+            &copy; 2024, todos os direitos reservados para Yuri beck
+        </p>
+    </footer>
+</body>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #232222;
+}
+
+
+header {
+    background: #080808;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+/* body {
+        font-family: Arial, sans-serif;
+        background-color: #1c1c1c;
+        color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+    } */
+.dropbtn {
+  background-color: #080808;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #e6e2e2;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #000000;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #292929;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+ }
+
+h1, h2, h3 {
+    text-align: center;
+    color: white;
+}
+
+.section p {
+    margin-bottom: 20px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+    
+
+.titles-list, .tracks-list {
+    list-style-type: none;
+    padding: 0;
+    color: #ffffff;
+}
+
+.titles-list li, .tracks-list li {
+    background-color: #333;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.team-logo {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+}
+footer {
+    text-align: center;
+    background: #080808;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+</style>

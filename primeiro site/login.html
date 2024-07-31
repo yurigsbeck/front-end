@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1> blog</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="titulo.html">titles</a></li>
+                <li><a href="login.html">login</a></li>
+            
+                <div class="dropdown">
+                <button class="dropbtn">contact</button>
+                <div class="dropdown-content">
+                <a href="https://www.instagram.com/">instagram</a>
+                <a href="https://www.instagram.com/accounts/login/">pinterest</a>
+                <a href="https://x.com/">twitter</a>
+                </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <!-- <article> -->
+        <br>
+        <br>
+        <br>
+    <form action="index.html" method="post">
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <button type="submit">Login</button>
+      <div class="container" style="background-color:#f1f1f1">
+        <span class="psw">não tem conta?<a href="cadastrar.html"> cadastra-se aqui</a></span>
+      </div>
+    </div>
+    </form>
+    <!-- </article> -->
+    <br>
+    <br>
+    <br>
+    <footer>
+        &copy; 2024, todos os direitos reservados para Yuri beck
+    </footer>
+</body>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1d1d;
+}
+
+
+header {
+    background: #080808;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header li:hover{
+    background-color: rgba(91, 80, 80, 0.361);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.dropbtn {
+  background-color: #080808;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #e6e2e2;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #000000;
+}
+
+form {
+  /* border: 3px solid #f1f1f1; */
+  margin-inline: 200px;
+  padding-inline: 100px;
+
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  padding: 16px;
+  background-color:#f1f1f1
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+}
+/* article {
+    background: #8f8c8c;
+    margin-bottom: 200px;
+    padding: 10opx;
+} */
+
+footer {
+    text-align: center;
+    background: #080808;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+</style>
