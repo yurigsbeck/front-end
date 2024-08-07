@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item"><p></p>xxxxxxx1</div>
+        <div class="grid-item"><p></p>xxxxxxx2</div>
+        <div class="grid-item"><p></p>xxxxxxx3</div>
+        <div class="grid-item"><p></p>xxxxxxx4</div>
+        <div class="grid-item"><p></p>xxxxxxx5</div>
+        <div class="grid-item"><p></p>xxxxxxx6</div>
+    </div>
+</body>
+
+<style>
+    div {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-gap: 20px;
+    }
+    .grid-item {
+        display: grid;
+        grid-template-rows: 1fr 2fr 1fr; 
+        grid-gap: 10px;
+        border-radius: 10px;
+        background-color: aqua; 
+    }
+</style>
+</html>
