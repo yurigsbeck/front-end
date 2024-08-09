@@ -90,6 +90,18 @@ footer {
         height: 200px;
         width: auto;
     }
+    .content .tatuagem {
+        height: 260px;
+        width: auto;
+    }
+    .content .academia {
+        height: 165px;
+        width: auto;
+    }
+    .content .tenis {
+        height: 250px;
+        width: auto;
+    }
     footer {
         display: flex;
         text-align: left;
