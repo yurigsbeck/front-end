@@ -66,3 +66,30 @@ i = Number(prompt(`insira um numero`))
 contagemRegressiva()
 
 //4
+let add = (a, b) => a+b
+let sub = (a, b) => a-b
+let mult = (a, b) => a*b
+let divi = (a, b) => a/b
+
+a = Number(prompt(`qual seu primeiro numero escolhido?`))
+b = Number(prompt(`qual seu segundo numero escolhido?`))
+
+let choice = prompt(`qual operação voce deseja \[1] adição \[2] subtração \[3] multiplicação \[4] divisão?`)
+
+function calculadora () {
+    switch (choice) {
+        case "1"|| choice.toLowerCase.apply().includes(`adição`):
+            alert(`a adição de ${a} e ${b} será ${add(a,b)}`)
+            break;
+        case "2"|| choice.toLowerCase.apply().includes(`subtração`):
+            alert(`a subtração de ${a} e ${b} será ${sub(a,b)}`)
+            break;
+        case "3"|| choice.toLowerCase.apply().includes(`multiplicação`):
+            alert(`a multiplicação de ${a} e ${b} será ${mult(a,b)}`)
+            break;
+        case "4"|| choice.toLowerCase.apply().includes(`divisão`):
+            alert(`a divisão de ${a} e ${b} será ${divi(a,b)}`)
+            break;   
+    }
+}
+calculadora()
