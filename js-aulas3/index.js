@@ -23,4 +23,8 @@ red.addEventListener('click', () => titulo.style.color = "red")
 
 let conter = document.getElementById('conteiner')
 
-conter.addEventListener('mouseover', () => conter.style.backgroundColor=hoover = "red")
+conter.style.width = 100
+conter.style.height = 100
+
+conter.addEventListener('mouseover', () => conter.style.backgroundColor = "rgb(49, 49, 49)")
+conter.addEventListener('mouseout',() => conter.style.backgroundColor = "gray" )
