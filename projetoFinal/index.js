@@ -24,8 +24,8 @@ toque2.addEventListener('click', function() {
     }
 });
 
-const toque3 = document.getElementById('exp');
-const paragrafo3 = document.getElementById('expText');
+const toque3 = document.getElementById('pro');
+const paragrafo3 = document.getElementById('projects');
 
 toque3.addEventListener('click', function() {
     if (paragrafo3.style.display === 'none') {
