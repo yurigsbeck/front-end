@@ -30,10 +30,10 @@ const paragrafo3 = document.getElementById('projects');
 toque3.addEventListener('click', function() {
     if (paragrafo3.style.display === 'none') {
         paragrafo3.style.display = 'block';
-         toque3.textContent = 'Experiencia';
+         toque3.textContent = 'Projeto';
     } else {
         paragrafo3.style.display = 'none';
-        toque3.textContent = 'Experiencia';
+        toque3.textContent = 'Projeto';
     }
 });
 
@@ -47,7 +47,7 @@ function fetchGitHubProjects() {
             const projectsList = document.getElementById('projects-list');
             data.forEach(repo => {
                 const projectItem = `
-                    <div class="project-item">
+                    <div class="project-list">
                         <h3>${repo.name}</h3>
                         <p>${repo.description || 'Sem descrição'}</p>
                         <a href="${repo.html_url}" target="_blank">Ver Projeto</a>
